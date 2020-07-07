@@ -66,7 +66,7 @@ const img = [
 for(let i = 0; i <img.length; i++) {
     const gallery = document.body.appendChild(document.querySelector('.gallery'));
 
-    const newImg = `<a id="a-${[i+1]}" href="../img/${img[i].name}" data-lightbox="gallery-img" data-title="${img[i].desc}" data-alt="${img[i].title}"><img class="img-${i+1}" src="../img/thumbnails/${img[i].name}"</a>`;
+    const newImg = `<a id="a-${[i+1]}" href="img/${img[i].name}" data-lightbox="gallery-img" data-title="${img[i].desc}" data-alt="${img[i].title}"><img class="img-${i+1}" src="img/thumbnails/${img[i].name}"</a>`;
 
     gallery.innerHTML += newImg;
 }
