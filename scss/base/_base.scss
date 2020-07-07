@@ -1,0 +1,22 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+h1 {
+  text-align: center;
+}
+
+.gal p {
+  line-height: 1.45em;
+  display: none;
+}
+
+.search-input {
+  border: 4px solid $light-grey;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  max-width: 700px;
+  text-align: center;
+}
