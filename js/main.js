@@ -71,14 +71,16 @@ for(let i = 0; i <img.length; i++) {
     gallery.innerHTML += newImg;
 }
 
-
+//Search Bar
 $('#search').on('keyup change', function() {
     const input = $(this).val().toLowerCase();
 
+    // Filter Search Results
     for (let i = 0; i < img.length; i++) {
         const a = document.getElementById(`a-${[i + 1]}`);
         const caption = img[i].desc.toLowerCase();
 
+        // Displays only images with captions containing user search input
         if (caption.includes(input)) {
             a.style.display = "";
         } else {
@@ -88,3 +90,11 @@ $('#search').on('keyup change', function() {
 });
 
 
+// Toggle Dark Mode
+function darkMode() {
+    let body = document.body;
+    body.classList.toggle("dark-mode-body");
+
+    let search = document.getElementById("search");
+    search.classList.toggle("dark-mode-search");
+}
